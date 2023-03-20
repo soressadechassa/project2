@@ -18,6 +18,7 @@ def new_game():
 
     diplay_score(correct_guesses, guesses)
 
+
 def check_answer(ans, guess):
     if ans == guess:
         print("correct")
@@ -44,6 +45,7 @@ def diplay_score(correct_guesses, guesses):
 
     score = int((correct_guesses/len(question))*100)
     print(f"your score is {score}%")
+
 
 def play_again():
     responce = input("do you want to play again?: (yes/no) ")
